@@ -1,0 +1,2 @@
+C:\dev\cpp_projects\hazel\Hazel\Hazel\vendor\glad\bin\Debug-windows-x86_64\glad\glad.pdb
+C:\dev\cpp_projects\hazel\Hazel\Hazel\vendor\glad\bin-int\Debug-windows-x86_64\glad\glad.pdb

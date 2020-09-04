@@ -1,12 +1,14 @@
 #pragma once
 
-#include "hazel/window/Window.h"
+#include <glad/glad.h>
 
-#include <GLFW/glfw3.h>
+#include "hazel/window/Window.h"
 
 #include "hazel/events/ApplicationEvent.h"
 #include "hazel/events/MouseEvent.h"
 #include "hazel/events/KeyEvent.h"
+
+struct GLFWwindow {};
 
 namespace Hazel {
 
@@ -37,6 +39,8 @@ namespace Hazel {
 
 	private:
 		virtual void init(const WindowProps& windowProps);
+		void initGLFW();
+		void initGlad();
 		virtual void shutdown();
 		
 		void setGLFWCallbacks();

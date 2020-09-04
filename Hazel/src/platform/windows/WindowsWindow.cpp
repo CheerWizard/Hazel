@@ -2,6 +2,7 @@
 
 #include "hzpch.h"
 #include "WindowsWindow.h"
+#include <GLFW/glfw3.h>
 
 namespace Hazel {
 
@@ -27,23 +28,32 @@ namespace Hazel {
 		m_windowData.title = windowProps._title;
 		m_windowData.height = windowProps._height;
 		m_windowData.width = windowProps._width;
-
 		CORE_LOG_INFO("Creating window {0} ({1} {2})", windowProps._title, windowProps._width, windowProps._height);
 
-		if (!s_GLFWInitialized) {
-			int success = glfwInit();
-			CORE_ASSERT(success, "Count not initialize GLFW!");
-			glfwSetErrorCallback(glfwError);
-			s_GLFWInitialized = true;
-		}
+		initGLFW();
 
 		m_window = glfwCreateWindow((int)windowProps._width, (int)windowProps._height, m_windowData.title.c_str(), nullptr, nullptr);
 		glfwMakeContextCurrent(m_window);
+
+		initGlad();
+
 		glfwSetWindowUserPointer(m_window, &m_windowData);
-
 		setVSync(true);
-
 		setGLFWCallbacks();
+	}
+
+	void WindowsWindow::initGLFW() {
+		if (!s_GLFWInitialized) {
+			int success = glfwInit();
+			CORE_ASSERT(success, "Failed to init GLFW!");
+			glfwSetErrorCallback(glfwError);
+			s_GLFWInitialized = true;
+		}
+	}
+
+	void WindowsWindow::initGlad() {
+		int status = gladLoadGLLoader((GLADloadproc)glfwGetProcAddress);
+		CORE_ASSERT(status, "Failed to init Glad!");
 	}
 
 	void WindowsWindow::shutdown() {
