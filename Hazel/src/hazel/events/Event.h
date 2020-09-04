@@ -1,6 +1,6 @@
 #pragma once
 
-#include "../core.h"
+#include "hazel/core.h"
 
 namespace Hazel {
 
@@ -43,6 +43,10 @@ namespace Hazel {
 
 			inline bool isInCategory(const EventCategory& eventCategory) {
 				return getCategoryFlags() & eventCategory;
+			}
+
+			inline bool isHandled() {
+				return m_handled;
 			}
 
 		protected:

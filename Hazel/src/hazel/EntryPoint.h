@@ -1,5 +1,6 @@
 #pragma once
-#include "logger/Log.h"
+#include "hzpch.h"
+#include "app/app.h"
 
 #ifdef HZ_PLATFORM_WIN
 
