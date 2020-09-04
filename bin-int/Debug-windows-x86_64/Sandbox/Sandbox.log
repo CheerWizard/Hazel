@@ -20,6 +20,6 @@ C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.2
           [
               _Ty=Hazel::Layer *
           ]
-C:\dev\cpp_projects\hazel\Hazel\Hazel\src\hazel\app\app.h(31,35): warning C4251: 'Hazel::Application::m_window': class 'std::unique_ptr<Hazel::Window,std::default_delete<Hazel::Window>>' needs to have dll-interface to be used by clients of class 'Hazel::Application'
-C:\dev\cpp_projects\hazel\Hazel\Hazel\src\hazel\app\app.h(31): message : see declaration of 'std::unique_ptr<Hazel::Window,std::default_delete<Hazel::Window>>'
+C:\dev\cpp_projects\hazel\Hazel\Hazel\src\hazel\app\app.h(38,35): warning C4251: 'Hazel::Application::m_window': class 'std::unique_ptr<Hazel::Window,std::default_delete<Hazel::Window>>' needs to have dll-interface to be used by clients of class 'Hazel::Application'
+C:\dev\cpp_projects\hazel\Hazel\Hazel\src\hazel\app\app.h(38): message : see declaration of 'std::unique_ptr<Hazel::Window,std::default_delete<Hazel::Window>>'
   Sandbox.vcxproj -> C:\dev\cpp_projects\hazel\Hazel\Sandbox\..\bin\Debug-windows-x86_64\Sandbox\Sandbox.exe

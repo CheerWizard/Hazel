@@ -13,6 +13,9 @@
     <Filter Include="hazel\layer">
       <UniqueIdentifier>{65ED6849-D1A2-E13E-5A97-DB15C64BD842}</UniqueIdentifier>
     </Filter>
+    <Filter Include="hazel\layer\imgui">
+      <UniqueIdentifier>{8FB2AC35-FBC8-AACB-4440-36EDB0957B53}</UniqueIdentifier>
+    </Filter>
     <Filter Include="hazel\logger">
       <UniqueIdentifier>{88197A77-747C-091C-1D02-42D20944D59E}</UniqueIdentifier>
     </Filter>
@@ -21,6 +24,9 @@
     </Filter>
     <Filter Include="platform">
       <UniqueIdentifier>{4A63C33C-3630-1E48-5F49-0CF04B7553D6}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="platform\opengl">
+      <UniqueIdentifier>{9E4DBFD0-0AD9-2C95-13EA-AF897FF48895}</UniqueIdentifier>
     </Filter>
     <Filter Include="platform\windows">
       <UniqueIdentifier>{A44FC440-9048-E392-B97A-C817A5D2C29E}</UniqueIdentifier>
@@ -55,6 +61,9 @@
     <ClInclude Include="src\hazel\layer\LayerStack.h">
       <Filter>hazel\layer</Filter>
     </ClInclude>
+    <ClInclude Include="src\hazel\layer\imgui\ImGuiLayer.h">
+      <Filter>hazel\layer\imgui</Filter>
+    </ClInclude>
     <ClInclude Include="src\hazel\logger\Log.h">
       <Filter>hazel\logger</Filter>
     </ClInclude>
@@ -62,6 +71,9 @@
       <Filter>hazel\window</Filter>
     </ClInclude>
     <ClInclude Include="src\hzpch.h" />
+    <ClInclude Include="src\platform\opengl\ImGuiOpenGLRenderer.h">
+      <Filter>platform\opengl</Filter>
+    </ClInclude>
     <ClInclude Include="src\platform\windows\WindowsWindow.h">
       <Filter>platform\windows</Filter>
     </ClInclude>
@@ -76,10 +88,16 @@
     <ClCompile Include="src\hazel\layer\LayerStack.cpp">
       <Filter>hazel\layer</Filter>
     </ClCompile>
+    <ClCompile Include="src\hazel\layer\imgui\ImGuiLayer.cpp">
+      <Filter>hazel\layer\imgui</Filter>
+    </ClCompile>
     <ClCompile Include="src\hazel\logger\Log.cpp">
       <Filter>hazel\logger</Filter>
     </ClCompile>
     <ClCompile Include="src\hzpch.cpp" />
+    <ClCompile Include="src\platform\opengl\ImGuiOpenGLRenderer.cpp">
+      <Filter>platform\opengl</Filter>
+    </ClCompile>
     <ClCompile Include="src\platform\windows\WindowsWindow.cpp">
       <Filter>platform\windows</Filter>
     </ClCompile>

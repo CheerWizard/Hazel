@@ -7,3 +7,5 @@
 #include "hazel/logger/Log.h"
 // Layers
 #include "hazel/layer/Layer.h"
+// ImGui
+#include "hazel/layer/imgui/ImGuiLayer.h"

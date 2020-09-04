@@ -10,7 +10,12 @@
 
 namespace Hazel {
 
+	Application* Application::s_Instance = nullptr;
+
 	Application::Application() {
+		CORE_ASSERT(!s_Instance, "Application already exists!");
+		s_Instance = this;
+
 		m_window = std::unique_ptr<Window>(Window::create());
 		m_window->setEventCallback(BIND_EVENT_FN(onEvent));
 	}
@@ -29,11 +34,13 @@ namespace Hazel {
 	void Application::pushLayer(Layer* layer)
 	{
 		m_layerStack.pushLayer(layer);
+		layer->onAttach();
 	}
 
 	void Application::pushOverlay(Layer* overlay)
 	{
 		m_layerStack.pushOverlay(overlay);
+		overlay->onAttach();
 	}
 
 	bool Application::onWindowClose(WindowCloseEvent& event)
