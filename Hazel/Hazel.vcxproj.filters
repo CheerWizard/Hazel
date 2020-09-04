@@ -77,6 +77,8 @@
     <ClInclude Include="src\platform\windows\WindowsWindow.h">
       <Filter>platform\windows</Filter>
     </ClInclude>
+    <ClInclude Include="src\hazel\io\KeyboardCodes.h" />
+    <ClInclude Include="src\hazel\time\TimeUtil.h" />
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="src\hazel\app\app.cpp">

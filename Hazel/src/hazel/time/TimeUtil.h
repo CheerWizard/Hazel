@@ -1,0 +1,1 @@
+#define CURRENT_TIME_FLOAT std::chrono::duration_cast<std::chrono::milliseconds>(std::chrono::system_clock::now()).count();

@@ -136,6 +136,12 @@ namespace Hazel {
 			MouseMovedEvent event((float)x, (float)y);
 			windowData.eventCallback(event);
 		});
+
+		glfwSetCharCallback(m_window, [](GLFWwindow* window, unsigned int keycode) {
+			WindowData& data = *(WindowData*)glfwGetWindowUserPointer(window);
+			KeyTypedEvent event(keycode);
+			data.eventCallback(event);
+		});
 	}
 
 	void WindowsWindow::onUpdate() {

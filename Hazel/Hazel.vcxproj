@@ -149,10 +149,12 @@
     <ClInclude Include="src\hazel\events\Event.h" />
     <ClInclude Include="src\hazel\events\KeyEvent.h" />
     <ClInclude Include="src\hazel\events\MouseEvent.h" />
+    <ClInclude Include="src\hazel\io\KeyboardCodes.h" />
     <ClInclude Include="src\hazel\layer\Layer.h" />
     <ClInclude Include="src\hazel\layer\LayerStack.h" />
     <ClInclude Include="src\hazel\layer\imgui\ImGuiLayer.h" />
     <ClInclude Include="src\hazel\logger\Log.h" />
+    <ClInclude Include="src\hazel\time\TimeUtil.h" />
     <ClInclude Include="src\hazel\window\Window.h" />
     <ClInclude Include="src\hzpch.h" />
     <ClInclude Include="src\platform\opengl\ImGuiOpenGLRenderer.h" />
