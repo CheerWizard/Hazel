@@ -4,13 +4,25 @@
     <Filter Include="hazel">
       <UniqueIdentifier>{B939900F-254E-B8C0-EECF-5B205AA3B4F1}</UniqueIdentifier>
     </Filter>
+    <Filter Include="hazel\events">
+      <UniqueIdentifier>{9DAFA367-8912-330C-3298-6BC21EDAFE8E}</UniqueIdentifier>
+    </Filter>
     <Filter Include="hazel\logger">
       <UniqueIdentifier>{88197A77-747C-091C-1D02-42D20944D59E}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="platform">
+      <UniqueIdentifier>{4A63C33C-3630-1E48-5F49-0CF04B7553D6}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="platform\windows">
+      <UniqueIdentifier>{A44FC440-9048-E392-B97A-C817A5D2C29E}</UniqueIdentifier>
     </Filter>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="src\Hazel.h" />
     <ClInclude Include="src\hazel\EntryPoint.h">
+      <Filter>hazel</Filter>
+    </ClInclude>
+    <ClInclude Include="src\hazel\Window.h">
       <Filter>hazel</Filter>
     </ClInclude>
     <ClInclude Include="src\hazel\app.h">
@@ -19,13 +31,25 @@
     <ClInclude Include="src\hazel\core.h">
       <Filter>hazel</Filter>
     </ClInclude>
+    <ClInclude Include="src\hazel\events\ApplicationEvent.h">
+      <Filter>hazel\events</Filter>
+    </ClInclude>
+    <ClInclude Include="src\hazel\events\Event.h">
+      <Filter>hazel\events</Filter>
+    </ClInclude>
+    <ClInclude Include="src\hazel\events\KeyEvent.h">
+      <Filter>hazel\events</Filter>
+    </ClInclude>
+    <ClInclude Include="src\hazel\events\MouseEvent.h">
+      <Filter>hazel\events</Filter>
+    </ClInclude>
     <ClInclude Include="src\hazel\logger\Log.h">
       <Filter>hazel\logger</Filter>
     </ClInclude>
-    <ClInclude Include="src\hazel\events\Event.h" />
-    <ClInclude Include="src\hazel\events\KeyEvent.h" />
-    <ClInclude Include="src\hazel\events\ApplicationEvent.h" />
-    <ClInclude Include="src\hazel\events\MouseEvent.h" />
+    <ClInclude Include="src\hzpch.h" />
+    <ClInclude Include="src\platform\windows\WindowsWindow.h">
+      <Filter>platform\windows</Filter>
+    </ClInclude>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="src\hazel\app.cpp">
@@ -33,6 +57,10 @@
     </ClCompile>
     <ClCompile Include="src\hazel\logger\Log.cpp">
       <Filter>hazel\logger</Filter>
+    </ClCompile>
+    <ClCompile Include="src\hzpch.cpp" />
+    <ClCompile Include="src\platform\windows\WindowsWindow.cpp">
+      <Filter>platform\windows</Filter>
     </ClCompile>
   </ItemGroup>
 </Project>

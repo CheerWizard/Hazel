@@ -1,14 +1,10 @@
 #pragma once
 
-#include <string>
-#include <functional>
-
 #include "../core.h"
 
 namespace Hazel {
 
-	#define EVENT_CLASS_TYPE(type) \
-		static EventType getStaticType() { return EventType::##type; } \
+	#define EVENT_CLASS_TYPE(type) static EventType getStaticType() { return EventType::##type; } \
 		virtual EventType getEventType() const override { return getStaticType(); } \
 		virtual const char* getName() const override { return #type; }
 

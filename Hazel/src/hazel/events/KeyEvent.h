@@ -1,7 +1,5 @@
 #pragma once
 
-#include <sstream>
-
 #include "Event.h"
 
 namespace Hazel {
@@ -53,6 +51,7 @@ namespace Hazel {
 			}
 
 			EVENT_CLASS_TYPE(KeyReleased)
+
 	};
 
 }

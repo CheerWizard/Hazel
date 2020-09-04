@@ -1,19 +1,17 @@
 #pragma once
-
 #include "Event.h"
-#include <sstream>
 
 namespace Hazel {
-	
-	class HAZEL_API MouseMovedEvent : public Event 
+
+	class HAZEL_API MouseMovedEvent : public Event
 	{
 
 	private:
 		float m_mouseX, m_mouseY;
-	
-	public: 
+
+	public:
 		MouseMovedEvent(float x, float y) : m_mouseX(x), m_mouseY(y) {}
-	
+
 		inline float getX() const { return m_mouseX; }
 		inline float getY() const { return m_mouseY; }
 
@@ -24,11 +22,11 @@ namespace Hazel {
 		}
 
 		EVENT_CLASS_TYPE(MouseMoved)
-		EVENT_CLASS_CATEGORY(EventCategoryMouse | EventCategoryInput)
+			EVENT_CLASS_CATEGORY(EventCategoryMouse | EventCategoryInput)
 
 	};
 
-	class HAZEL_API MouseScrolledEvent : public Event 
+	class HAZEL_API MouseScrolledEvent : public Event
 	{
 
 	public:
@@ -44,7 +42,7 @@ namespace Hazel {
 		}
 
 		EVENT_CLASS_TYPE(MouseScrolled)
-		EVENT_CLASS_CATEGORY(EventCategoryMouse | EventCategoryInput)
+			EVENT_CLASS_CATEGORY(EventCategoryMouse | EventCategoryInput)
 
 	private:
 		float m_xOffset, m_yOffset;
@@ -69,6 +67,7 @@ namespace Hazel {
 	{
 
 	public:
+
 		MouseButtonPressedEvent(int button) : MouseButtonEvent(button) {}
 
 		std::string toString() const override {
@@ -85,6 +84,7 @@ namespace Hazel {
 	{
 
 	public:
+
 		MouseButtonReleasedEvent(int button) : MouseButtonEvent(button) {}
 
 		std::string toString() const override {
@@ -96,3 +96,5 @@ namespace Hazel {
 		EVENT_CLASS_TYPE(MouseButtonReleased)
 
 	};
+
+}

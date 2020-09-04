@@ -1,25 +1,26 @@
 #pragma once
 #include "../core.h"
-#include <memory>
 #include "spdlog/spdlog.h"
 #include "spdlog/fmt/ostr.h"
 
 namespace Hazel {
 
-	class HAZEL_API Log {
+	class HAZEL_API Log 
+	{
 	
 	private:
 		static std::shared_ptr<spdlog::logger> s_CoreLogger;
 		static std::shared_ptr<spdlog::logger> s_ClientLogger;
 
 	public:
+
 		static void init();
 
-		inline static std::shared_ptr<spdlog::logger>& getCoreLogger() {
+		static std::shared_ptr<spdlog::logger>& getCoreLogger() {
 			return s_CoreLogger;
 		}
 
-		inline static std::shared_ptr<spdlog::logger>& getClientLogger() {
+		static std::shared_ptr<spdlog::logger>& getClientLogger() {
 			return s_ClientLogger;
 		}
 
@@ -40,3 +41,6 @@ namespace Hazel {
 #define CLIENT_LOG_WARN(...)	::Hazel::Log::getClientLogger()->warn(__VA_ARGS__)
 #define CLIENT_LOG_ERR(...)		::Hazel::Log::getClientLogger()->error(__VA_ARGS__)
 #define CLIENT_LOG_FATAL(...)	::Hazel::Log::getClientLogger()->error(__VA_ARGS__)
+
+// Call this macros to assert statements.
+#define CORE_ASSERT()
