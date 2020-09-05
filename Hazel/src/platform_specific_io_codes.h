@@ -6,3 +6,4 @@
 // Win32 specific library.
 #include "platform/win32/io/KeyBoardCodes.h"
 #endif
+#include "hazel/io/MouseCodes.h"
