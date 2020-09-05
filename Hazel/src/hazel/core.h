@@ -11,15 +11,11 @@
 #endif
 
 #ifdef HZ_ENABLE_ASSERTS
-
 	#define ASSERT(x, ...) { if ((!x)) { CORE_LOG_ERR("Assertion failed: {0}", __VA_ARGS__); __debugbreak(); } }
 	#define CORE_ASSERT(x, ...) { if (!(x)) { CORE_LOG_ERR("Assertion failed: {0}", __VA_ARGS__); __debugbreak(); } }
-
 #else 
-
 	#define ASSERT(x, ...)
 	#define CORE_ASSERT(x, ...)
-
 #endif // HZ_ENABLE_ASSERTS
 
 #define BIT(x) (1 << x)

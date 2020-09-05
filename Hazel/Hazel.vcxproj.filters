@@ -61,9 +61,6 @@
     <ClInclude Include="src\hazel\events\MouseEvent.h">
       <Filter>hazel\events</Filter>
     </ClInclude>
-    <ClInclude Include="src\hazel\io\KeyboardCodes.h">
-      <Filter>hazel\io</Filter>
-    </ClInclude>
     <ClInclude Include="src\hazel\layer\Layer.h">
       <Filter>hazel\layer</Filter>
     </ClInclude>
@@ -93,6 +90,9 @@
     <ClInclude Include="src\platform\windows\io\WindowsInput.h" />
     <ClInclude Include="src\hazel\io\Inputs.h" />
     <ClInclude Include="src\platform\windows\glfw.h" />
+    <ClInclude Include="src\platform\windows\io\KeyBoardCodes.h" />
+    <ClInclude Include="src\platform\win32\io\KeyBoardCodes.h" />
+    <ClInclude Include="src\platform_specific_io_codes.h" />
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="src\hazel\app\app.cpp">

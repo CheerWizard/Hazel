@@ -157,7 +157,6 @@
     <ClInclude Include="src\hazel\events\MouseEvent.h" />
     <ClInclude Include="src\hazel\io\Input.h" />
     <ClInclude Include="src\hazel\io\Inputs.h" />
-    <ClInclude Include="src\hazel\io\KeyboardCodes.h" />
     <ClInclude Include="src\hazel\layer\Layer.h" />
     <ClInclude Include="src\hazel\layer\LayerStack.h" />
     <ClInclude Include="src\hazel\layer\imgui\ImGuiLayer.h" />
@@ -166,9 +165,12 @@
     <ClInclude Include="src\hazel\window\Window.h" />
     <ClInclude Include="src\hzpch.h" />
     <ClInclude Include="src\platform\opengl\ImGuiOpenGLRenderer.h" />
+    <ClInclude Include="src\platform\win32\io\KeyBoardCodes.h" />
     <ClInclude Include="src\platform\windows\glfw.h" />
+    <ClInclude Include="src\platform\windows\io\KeyBoardCodes.h" />
     <ClInclude Include="src\platform\windows\io\WindowsInput.h" />
     <ClInclude Include="src\platform\windows\WindowsWindow.h" />
+    <ClInclude Include="src\platform_specific_io_codes.h" />
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="src\hazel\app\app.cpp" />
