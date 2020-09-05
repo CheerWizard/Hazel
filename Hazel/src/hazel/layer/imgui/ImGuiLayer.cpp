@@ -74,7 +74,6 @@ namespace Hazel {
 
 		static bool show = true;
 		ImGui::ShowDemoWindow(&show);
-		ImGui::CloseCurrentPopup
 
 		ImGui::Render();
 		ImGui_ImplOpenGL3_RenderDrawData(ImGui::GetDrawData());
