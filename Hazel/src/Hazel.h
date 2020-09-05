@@ -9,3 +9,5 @@
 #include "hazel/layer/Layer.h"
 // ImGui
 #include "hazel/layer/imgui/ImGuiLayer.h"
+// Inputs
+#include "hazel/io/Inputs.h"

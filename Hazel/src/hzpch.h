@@ -1,3 +1,4 @@
+// Hazel pre-compiled header, used to deliver the common files or libraries to all parts of Hazel project.
 #pragma once
 
 #include <iostream>

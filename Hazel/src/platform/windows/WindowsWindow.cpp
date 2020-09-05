@@ -12,6 +12,11 @@ namespace Hazel {
 		CORE_LOG_ERR("GLFW Error: ({0}): {1}", error, description);
 	}
 
+	void* Window::getNativeWindow() const
+	{
+		return nullptr;
+	}
+
 	Window* Window::create(const WindowProps& windowProps) {
 		return new WindowsWindow(windowProps);
 	}
