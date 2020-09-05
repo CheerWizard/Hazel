@@ -6,7 +6,6 @@
 
 #include "hazel/io/Inputs.h"
 
-
 #define BIND_EVENT_FN(x) std::bind(&Application::x, this, std::placeholders::_1)
 
 
@@ -17,20 +16,29 @@ namespace Hazel {
 	Application::Application() {
 		CORE_ASSERT(!s_Instance, "Application already exists!");
 		s_Instance = this;
-
-		m_window = std::unique_ptr<Window>(Window::create());
-		m_window->setEventCallback(BIND_EVENT_FN(onEvent));
+		setupWindow();
+		setupImGuiLayer();
 	}
 
 	Application::~Application() {
 
 	}
 
+	void Application::setupWindow() {
+		m_window = std::unique_ptr<Window>(Window::create());
+		m_window->setEventCallback(BIND_EVENT_FN(onEvent));
+	}
+
+	void Application::setupImGuiLayer() {
+		m_imguiLayer = new ImGuiLayer();
+		pushOverlay(m_imguiLayer);
+	}
+
 	void Application::onEvent(Event& e) {
 		EventDispatcher eventDispatcher(e);
 		eventDispatcher.dispatch<WindowCloseEvent>(BIND_EVENT_FN(onWindowClose));
 
-		updateLayers(e);
+		updateLayerEvents(e);
 	}
 
 	void Application::pushLayer(Layer* layer)
@@ -64,12 +72,20 @@ namespace Hazel {
 		}
 	}
 
+	void Application::updateImGuiLayer() {
+		m_imguiLayer->begin();
+		for (Layer* layer : m_layerStack) {
+			layer->onImGuiRender();
+		}
+		m_imguiLayer->end();
+	}
+
 	void Application::updateWindow()
 	{
 		m_window->onUpdate();
 	}
 
-	void Application::updateLayers(Event& e)
+	void Application::updateLayerEvents(Event& e)
 	{
 		for (auto it = m_layerStack.end(); it != m_layerStack.begin(); ) {
 			(*--it)->onEvent(e);

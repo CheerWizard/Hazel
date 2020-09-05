@@ -4,7 +4,6 @@ namespace Hazel {
 
 	LayerStack::LayerStack()
 	{
-		m_layerIterator = begin();
 	}
 
 	LayerStack::~LayerStack()
@@ -13,10 +12,11 @@ namespace Hazel {
 			delete layer;
 		}
 	}
-
+	
 	void LayerStack::pushLayer(Layer* layer)
 	{
-		m_layerIterator = m_layers.emplace(m_layerIterator, layer);
+		m_layers.emplace(begin() + m_layerIndex, layer);
+		m_layerIndex++;
 	}
 
 	void LayerStack::popLayer(Layer* layer)
@@ -24,7 +24,7 @@ namespace Hazel {
 		auto it = std::find(begin(), end(), layer);
 		if (it != end()) {
 			m_layers.erase(it);
-			m_layerIterator--;
+			m_layerIndex++;
 		}
 	}
 

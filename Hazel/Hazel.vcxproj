@@ -160,12 +160,12 @@
     <ClInclude Include="src\hazel\io\MouseCodes.h" />
     <ClInclude Include="src\hazel\layer\Layer.h" />
     <ClInclude Include="src\hazel\layer\LayerStack.h" />
+    <ClInclude Include="src\hazel\layer\imgui\ImGuiBuilder.h" />
     <ClInclude Include="src\hazel\layer\imgui\ImGuiLayer.h" />
     <ClInclude Include="src\hazel\logger\Log.h" />
     <ClInclude Include="src\hazel\time\TimeUtil.h" />
     <ClInclude Include="src\hazel\window\Window.h" />
     <ClInclude Include="src\hzpch.h" />
-    <ClInclude Include="src\platform\opengl\ImGuiOpenGLRenderer.h" />
     <ClInclude Include="src\platform\win32\io\KeyBoardCodes.h" />
     <ClInclude Include="src\platform\windows\WindowsWindow.h" />
     <ClInclude Include="src\platform\windows\glfw.h" />
@@ -587,7 +587,6 @@
     <ClCompile Include="src\hazel\layer\LayerStack.cpp" />
     <ClCompile Include="src\hazel\layer\imgui\ImGuiLayer.cpp" />
     <ClCompile Include="src\hazel\logger\Log.cpp" />
-    <ClCompile Include="src\platform\opengl\ImGuiOpenGLRenderer.cpp" />
     <ClCompile Include="src\platform\windows\WindowsWindow.cpp" />
     <ClCompile Include="src\platform\windows\io\WindowsInput.cpp" />
   </ItemGroup>

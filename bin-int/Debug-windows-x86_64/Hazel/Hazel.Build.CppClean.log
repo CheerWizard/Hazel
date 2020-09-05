@@ -1,9 +1,7 @@
 c:\dev\cpp_projects\hazel\hazel\bin-int\debug-windows-x86_64\hazel\vc142.pdb
 c:\dev\cpp_projects\hazel\hazel\bin-int\debug-windows-x86_64\hazel\vc142.idb
-c:\dev\cpp_projects\hazel\hazel\bin-int\debug-windows-x86_64\hazel\windowswindow.obj
 c:\dev\cpp_projects\hazel\hazel\bin-int\debug-windows-x86_64\hazel\windowsinput.obj
-c:\dev\cpp_projects\hazel\hazel\bin-int\debug-windows-x86_64\hazel\imguiopenglrenderer.obj
-c:\dev\cpp_projects\hazel\hazel\bin-int\debug-windows-x86_64\hazel\hzpch.obj
+c:\dev\cpp_projects\hazel\hazel\bin-int\debug-windows-x86_64\hazel\windowswindow.obj
 c:\dev\cpp_projects\hazel\hazel\bin-int\debug-windows-x86_64\hazel\log.obj
 c:\dev\cpp_projects\hazel\hazel\bin-int\debug-windows-x86_64\hazel\imguilayer.obj
 c:\dev\cpp_projects\hazel\hazel\bin-int\debug-windows-x86_64\hazel\layerstack.obj
@@ -17,5 +15,6 @@ c:\dev\cpp_projects\hazel\hazel\bin-int\debug-windows-x86_64\hazel\hazel.tlog\li
 c:\dev\cpp_projects\hazel\hazel\bin-int\debug-windows-x86_64\hazel\hazel.tlog\link-rc.read.1.tlog
 c:\dev\cpp_projects\hazel\hazel\bin-int\debug-windows-x86_64\hazel\hazel.tlog\link-rc.write.1.tlog
 c:\dev\cpp_projects\hazel\hazel\bin-int\debug-windows-x86_64\hazel\hazel.tlog\link.command.1.tlog
+c:\dev\cpp_projects\hazel\hazel\bin-int\debug-windows-x86_64\hazel\hazel.tlog\link.delete.1.tlog
 c:\dev\cpp_projects\hazel\hazel\bin-int\debug-windows-x86_64\hazel\hazel.tlog\link.read.1.tlog
 c:\dev\cpp_projects\hazel\hazel\bin-int\debug-windows-x86_64\hazel\hazel.tlog\link.write.1.tlog

@@ -5,6 +5,7 @@
 #include "hazel/events/Event.h"
 #include "hazel/events/ApplicationEvent.h"
 #include "hazel/layer/LayerStack.h"
+#include "hazel/layer/imgui/ImGuiLayer.h"
 
 
 namespace Hazel {
@@ -16,6 +17,7 @@ namespace Hazel {
 
 	private:
 		std::unique_ptr<Window> m_window;
+		ImGuiLayer* m_imguiLayer;
 		bool m_running;
 		LayerStack m_layerStack;
 
@@ -36,6 +38,7 @@ namespace Hazel {
 			while (m_running) {
 				clearBuffer();
 				updateLayers();
+				updateImGuiLayer();
 				updateInputs();
 				updateWindow();
 			}
@@ -44,10 +47,14 @@ namespace Hazel {
 	private:
 		bool onWindowClose(WindowCloseEvent& event);
 
+		void setupWindow();
+		void setupImGuiLayer();
+
 		void clearBuffer();
 		void updateLayers();
+		void updateImGuiLayer();
 		void updateWindow();
-		void updateLayers(Event& e);
+		void updateLayerEvents(Event& e);
 		void updateInputs();
 	};
 

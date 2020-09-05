@@ -34,9 +34,6 @@
     <Filter Include="src\platform">
       <UniqueIdentifier>{41663D6D-2DC9-CC11-D64E-05C8C2909894}</UniqueIdentifier>
     </Filter>
-    <Filter Include="src\platform\opengl">
-      <UniqueIdentifier>{B57427EB-21D6-04F9-AA43-4BAB16A43BB8}</UniqueIdentifier>
-    </Filter>
     <Filter Include="src\platform\win32">
       <UniqueIdentifier>{039B025D-EF7E-C3B2-58DF-BD0544E2AD34}</UniqueIdentifier>
     </Filter>
@@ -111,6 +108,9 @@
     <ClInclude Include="src\hazel\layer\LayerStack.h">
       <Filter>src\hazel\layer</Filter>
     </ClInclude>
+    <ClInclude Include="src\hazel\layer\imgui\ImGuiBuilder.h">
+      <Filter>src\hazel\layer\imgui</Filter>
+    </ClInclude>
     <ClInclude Include="src\hazel\layer\imgui\ImGuiLayer.h">
       <Filter>src\hazel\layer\imgui</Filter>
     </ClInclude>
@@ -125,9 +125,6 @@
     </ClInclude>
     <ClInclude Include="src\hzpch.h">
       <Filter>src</Filter>
-    </ClInclude>
-    <ClInclude Include="src\platform\opengl\ImGuiOpenGLRenderer.h">
-      <Filter>src\platform\opengl</Filter>
     </ClInclude>
     <ClInclude Include="src\platform\win32\io\KeyBoardCodes.h">
       <Filter>src\platform\win32\io</Filter>
@@ -1387,9 +1384,6 @@
     </ClCompile>
     <ClCompile Include="src\hazel\logger\Log.cpp">
       <Filter>src\hazel\logger</Filter>
-    </ClCompile>
-    <ClCompile Include="src\platform\opengl\ImGuiOpenGLRenderer.cpp">
-      <Filter>src\platform\opengl</Filter>
     </ClCompile>
     <ClCompile Include="src\platform\windows\WindowsWindow.cpp">
       <Filter>src\platform\windows</Filter>
