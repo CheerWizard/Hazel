@@ -10,6 +10,6 @@
 // ImGui
 #include "hazel/layer/imgui/ImGuiLayer.h"
 // Inputs
-#include "hazel/io/Inputs.h"
+//#include "hazel/io/Inputs.h"
 // IO codes.
 #include "platform_specific_io_codes.h"

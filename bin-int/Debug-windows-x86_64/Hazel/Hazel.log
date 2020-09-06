@@ -1,60 +1,10 @@
-﻿  app.cpp
-C:\dev\cpp_projects\hazel\Hazel\Hazel\src\hazel\logger\Log.h(13,54): warning C4251: 'Hazel::Log::s_CoreLogger': class 'std::shared_ptr<spdlog::logger>' needs to have dll-interface to be used by clients of class 'Hazel::Log'
-C:\dev\cpp_projects\hazel\Hazel\Hazel\vendor\spdlog\include\spdlog\details\registry.h(34): message : see declaration of 'std::shared_ptr<spdlog::logger>'
-C:\dev\cpp_projects\hazel\Hazel\Hazel\src\hazel\logger\Log.h(14,56): warning C4251: 'Hazel::Log::s_ClientLogger': class 'std::shared_ptr<spdlog::logger>' needs to have dll-interface to be used by clients of class 'Hazel::Log'
-C:\dev\cpp_projects\hazel\Hazel\Hazel\vendor\spdlog\include\spdlog\details\registry.h(34): message : see declaration of 'std::shared_ptr<spdlog::logger>'
-C:\dev\cpp_projects\hazel\Hazel\Hazel\src\hazel\logger\Log.h(47,1): warning C4005: 'CORE_ASSERT': macro redefinition
-C:\dev\cpp_projects\hazel\Hazel\Hazel\src\hazel\core.h(15): message : see previous definition of 'CORE_ASSERT'
-C:\dev\cpp_projects\hazel\Hazel\Hazel\src\hazel\layer\Layer.h(24,26): warning C4251: 'Hazel::Layer::m_debugName': class 'std::basic_string<char,std::char_traits<char>,std::allocator<char>>' needs to have dll-interface to be used by clients of class 'Hazel::Layer'
-C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.27.29110\include\xstring(4564): message : see declaration of 'std::basic_string<char,std::char_traits<char>,std::allocator<char>>'
-C:\dev\cpp_projects\hazel\Hazel\Hazel\src\hazel\layer\LayerStack.h(11,31): warning C4251: 'Hazel::LayerStack::m_layers': class 'std::vector<Hazel::Layer *,std::allocator<Hazel::Layer *>>' needs to have dll-interface to be used by clients of class 'Hazel::LayerStack'
-C:\dev\cpp_projects\hazel\Hazel\Hazel\src\hazel\layer\LayerStack.h(11): message : see declaration of 'std::vector<Hazel::Layer *,std::allocator<Hazel::Layer *>>'
-C:\dev\cpp_projects\hazel\Hazel\Hazel\src\hazel\app\app.h(19,35): warning C4251: 'Hazel::Application::m_window': class 'std::unique_ptr<Hazel::Window,std::default_delete<Hazel::Window>>' needs to have dll-interface to be used by clients of class 'Hazel::Application'
-C:\dev\cpp_projects\hazel\Hazel\Hazel\src\hazel\app\app.h(19): message : see declaration of 'std::unique_ptr<Hazel::Window,std::default_delete<Hazel::Window>>'
-C:\dev\cpp_projects\hazel\Hazel\Hazel\src\hazel\app\app.cpp(9,1): warning C4005: 'BIND_EVENT_FN': macro redefinition
-C:\dev\cpp_projects\hazel\Hazel\Hazel\src\hazel\core.h(23): message : see previous definition of 'BIND_EVENT_FN'
-C:\dev\cpp_projects\hazel\Hazel\Hazel\src\hazel\app\app.cpp(17,3): warning C4002: too many arguments for function-like macro invocation 'CORE_ASSERT'
+﻿  hzpch.cpp
+  app.cpp
+  Layer.cpp
   LayerStack.cpp
-C:\dev\cpp_projects\hazel\Hazel\Hazel\src\hazel\logger\Log.h(13,54): warning C4251: 'Hazel::Log::s_CoreLogger': class 'std::shared_ptr<spdlog::logger>' needs to have dll-interface to be used by clients of class 'Hazel::Log'
-C:\dev\cpp_projects\hazel\Hazel\Hazel\vendor\spdlog\include\spdlog\details\registry.h(34): message : see declaration of 'std::shared_ptr<spdlog::logger>'
-C:\dev\cpp_projects\hazel\Hazel\Hazel\src\hazel\logger\Log.h(14,56): warning C4251: 'Hazel::Log::s_ClientLogger': class 'std::shared_ptr<spdlog::logger>' needs to have dll-interface to be used by clients of class 'Hazel::Log'
-C:\dev\cpp_projects\hazel\Hazel\Hazel\vendor\spdlog\include\spdlog\details\registry.h(34): message : see declaration of 'std::shared_ptr<spdlog::logger>'
-C:\dev\cpp_projects\hazel\Hazel\Hazel\src\hazel\logger\Log.h(47,1): warning C4005: 'CORE_ASSERT': macro redefinition
-C:\dev\cpp_projects\hazel\Hazel\Hazel\src\hazel\core.h(15): message : see previous definition of 'CORE_ASSERT'
-C:\dev\cpp_projects\hazel\Hazel\Hazel\src\hazel\layer\Layer.h(24,26): warning C4251: 'Hazel::Layer::m_debugName': class 'std::basic_string<char,std::char_traits<char>,std::allocator<char>>' needs to have dll-interface to be used by clients of class 'Hazel::Layer'
-C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.27.29110\include\xstring(4564): message : see declaration of 'std::basic_string<char,std::char_traits<char>,std::allocator<char>>'
-C:\dev\cpp_projects\hazel\Hazel\Hazel\src\hazel\layer\LayerStack.h(11,31): warning C4251: 'Hazel::LayerStack::m_layers': class 'std::vector<Hazel::Layer *,std::allocator<Hazel::Layer *>>' needs to have dll-interface to be used by clients of class 'Hazel::LayerStack'
-C:\dev\cpp_projects\hazel\Hazel\Hazel\src\hazel\layer\LayerStack.h(11): message : see declaration of 'std::vector<Hazel::Layer *,std::allocator<Hazel::Layer *>>'
   ImGuiLayer.cpp
-C:\dev\cpp_projects\hazel\Hazel\Hazel\src\hazel\logger\Log.h(13,54): warning C4251: 'Hazel::Log::s_CoreLogger': class 'std::shared_ptr<spdlog::logger>' needs to have dll-interface to be used by clients of class 'Hazel::Log'
-C:\dev\cpp_projects\hazel\Hazel\Hazel\vendor\spdlog\include\spdlog\details\registry.h(34): message : see declaration of 'std::shared_ptr<spdlog::logger>'
-C:\dev\cpp_projects\hazel\Hazel\Hazel\src\hazel\logger\Log.h(14,56): warning C4251: 'Hazel::Log::s_ClientLogger': class 'std::shared_ptr<spdlog::logger>' needs to have dll-interface to be used by clients of class 'Hazel::Log'
-C:\dev\cpp_projects\hazel\Hazel\Hazel\vendor\spdlog\include\spdlog\details\registry.h(34): message : see declaration of 'std::shared_ptr<spdlog::logger>'
-C:\dev\cpp_projects\hazel\Hazel\Hazel\src\hazel\logger\Log.h(47,1): warning C4005: 'CORE_ASSERT': macro redefinition
-C:\dev\cpp_projects\hazel\Hazel\Hazel\src\hazel\core.h(15): message : see previous definition of 'CORE_ASSERT'
-C:\dev\cpp_projects\hazel\Hazel\Hazel\vendor\imgui\examples\imgui_impl_opengl3.cpp(186,5): warning C4996: 'strcpy': This function or variable may be unsafe. Consider using strcpy_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
-C:\dev\cpp_projects\hazel\Hazel\Hazel\vendor\imgui\examples\imgui_impl_opengl3.cpp(187,5): warning C4996: 'strcat': This function or variable may be unsafe. Consider using strcat_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
-C:\dev\cpp_projects\hazel\Hazel\Hazel\vendor\imgui\examples\imgui_impl_opengl3.cpp(515,5): warning C4996: 'sscanf': This function or variable may be unsafe. Consider using sscanf_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
-C:\dev\cpp_projects\hazel\Hazel\Hazel\src\hazel\layer\Layer.h(24,26): warning C4251: 'Hazel::Layer::m_debugName': class 'std::basic_string<char,std::char_traits<char>,std::allocator<char>>' needs to have dll-interface to be used by clients of class 'Hazel::Layer'
-C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.27.29110\include\xstring(4564): message : see declaration of 'std::basic_string<char,std::char_traits<char>,std::allocator<char>>'
-C:\dev\cpp_projects\hazel\Hazel\Hazel\src\hazel\layer\LayerStack.h(11,31): warning C4251: 'Hazel::LayerStack::m_layers': class 'std::vector<Hazel::Layer *,std::allocator<Hazel::Layer *>>' needs to have dll-interface to be used by clients of class 'Hazel::LayerStack'
-C:\dev\cpp_projects\hazel\Hazel\Hazel\src\hazel\layer\LayerStack.h(11): message : see declaration of 'std::vector<Hazel::Layer *,std::allocator<Hazel::Layer *>>'
-C:\dev\cpp_projects\hazel\Hazel\Hazel\src\hazel\app\app.h(19,35): warning C4251: 'Hazel::Application::m_window': class 'std::unique_ptr<Hazel::Window,std::default_delete<Hazel::Window>>' needs to have dll-interface to be used by clients of class 'Hazel::Application'
-C:\dev\cpp_projects\hazel\Hazel\Hazel\src\hazel\app\app.h(19): message : see declaration of 'std::unique_ptr<Hazel::Window,std::default_delete<Hazel::Window>>'
-C:\dev\cpp_projects\hazel\Hazel\Hazel\src\hazel\layer\imgui\ImGuiLayer.cpp(70,80): warning C4244: 'argument': conversion from 'unsigned int' to 'float', possible loss of data
-C:\dev\cpp_projects\hazel\Hazel\Hazel\src\hazel\layer\imgui\ImGuiLayer.cpp(70,51): warning C4244: 'argument': conversion from 'unsigned int' to 'float', possible loss of data
+  Log.cpp
+  WindowsWindow.cpp
   WindowsInput.cpp
-C:\dev\cpp_projects\hazel\Hazel\Hazel\src\hazel\logger\Log.h(13,54): warning C4251: 'Hazel::Log::s_CoreLogger': class 'std::shared_ptr<spdlog::logger>' needs to have dll-interface to be used by clients of class 'Hazel::Log'
-C:\dev\cpp_projects\hazel\Hazel\Hazel\vendor\spdlog\include\spdlog\details\registry.h(34): message : see declaration of 'std::shared_ptr<spdlog::logger>'
-C:\dev\cpp_projects\hazel\Hazel\Hazel\src\hazel\logger\Log.h(14,56): warning C4251: 'Hazel::Log::s_ClientLogger': class 'std::shared_ptr<spdlog::logger>' needs to have dll-interface to be used by clients of class 'Hazel::Log'
-C:\dev\cpp_projects\hazel\Hazel\Hazel\vendor\spdlog\include\spdlog\details\registry.h(34): message : see declaration of 'std::shared_ptr<spdlog::logger>'
-C:\dev\cpp_projects\hazel\Hazel\Hazel\src\hazel\logger\Log.h(47,1): warning C4005: 'CORE_ASSERT': macro redefinition
-C:\dev\cpp_projects\hazel\Hazel\Hazel\src\hazel\core.h(15): message : see previous definition of 'CORE_ASSERT'
-C:\dev\cpp_projects\hazel\Hazel\Hazel\src\hazel\layer\Layer.h(24,26): warning C4251: 'Hazel::Layer::m_debugName': class 'std::basic_string<char,std::char_traits<char>,std::allocator<char>>' needs to have dll-interface to be used by clients of class 'Hazel::Layer'
-C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.27.29110\include\xstring(4564): message : see declaration of 'std::basic_string<char,std::char_traits<char>,std::allocator<char>>'
-C:\dev\cpp_projects\hazel\Hazel\Hazel\src\hazel\layer\LayerStack.h(11,31): warning C4251: 'Hazel::LayerStack::m_layers': class 'std::vector<Hazel::Layer *,std::allocator<Hazel::Layer *>>' needs to have dll-interface to be used by clients of class 'Hazel::LayerStack'
-C:\dev\cpp_projects\hazel\Hazel\Hazel\src\hazel\layer\LayerStack.h(11): message : see declaration of 'std::vector<Hazel::Layer *,std::allocator<Hazel::Layer *>>'
-C:\dev\cpp_projects\hazel\Hazel\Hazel\src\hazel\app\app.h(19,35): warning C4251: 'Hazel::Application::m_window': class 'std::unique_ptr<Hazel::Window,std::default_delete<Hazel::Window>>' needs to have dll-interface to be used by clients of class 'Hazel::Application'
-C:\dev\cpp_projects\hazel\Hazel\Hazel\src\hazel\app\app.h(19): message : see declaration of 'std::unique_ptr<Hazel::Window,std::default_delete<Hazel::Window>>'
   Generating Code...
-  Hazel.vcxproj -> C:\dev\cpp_projects\hazel\Hazel\Hazel\..\bin\Debug-windows-x86_64\Hazel\Hazel.dll
+  Hazel.vcxproj -> C:\dev\cpp_projects\hazel\Hazel\Hazel\..\bin\Debug-windows-x86_64\Hazel\Hazel.lib

@@ -6,9 +6,6 @@
 
 #include "hazel/io/Inputs.h"
 
-#define BIND_EVENT_FN(x) std::bind(&Application::x, this, std::placeholders::_1)
-
-
 namespace Hazel {
 
 	Application* Application::s_Instance = nullptr;
@@ -26,7 +23,7 @@ namespace Hazel {
 
 	void Application::setupWindow() {
 		m_window = std::unique_ptr<Window>(Window::create());
-		m_window->setEventCallback(BIND_EVENT_FN(onEvent));
+		m_window->setEventCallback(BIND_EVENT_FN(Application::onEvent));
 	}
 
 	void Application::setupImGuiLayer() {
@@ -36,7 +33,7 @@ namespace Hazel {
 
 	void Application::onEvent(Event& e) {
 		EventDispatcher eventDispatcher(e);
-		eventDispatcher.dispatch<WindowCloseEvent>(BIND_EVENT_FN(onWindowClose));
+		eventDispatcher.dispatch<WindowCloseEvent>(BIND_EVENT_FN(Application::onWindowClose));
 
 		updateLayerEvents(e);
 	}

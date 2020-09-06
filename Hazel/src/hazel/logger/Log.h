@@ -42,6 +42,3 @@ namespace Hazel {
 #define CLIENT_LOG_WARN(...)	::Hazel::Log::getClientLogger()->warn(__VA_ARGS__)
 #define CLIENT_LOG_ERR(...)		::Hazel::Log::getClientLogger()->error(__VA_ARGS__)
 #define CLIENT_LOG_FATAL(...)	::Hazel::Log::getClientLogger()->error(__VA_ARGS__)
-
-// Call this macros to assert statements.
-#define CORE_ASSERT()

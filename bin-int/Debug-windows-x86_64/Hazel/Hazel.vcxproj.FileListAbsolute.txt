@@ -1,0 +1,2 @@
+C:\dev\cpp_projects\hazel\Hazel\bin\Debug-windows-x86_64\Hazel\Hazel.pdb
+C:\dev\cpp_projects\hazel\Hazel\bin-int\Debug-windows-x86_64\Hazel\Hazel.pdb
